@@ -1,0 +1,9 @@
+url: ~
+template:
+  bootstrap: 5
+
+# https://github.com/cosimameyer/overviewR/blob/7552d260a2b781de90b6c99ff9fdeab3a0b56658/_pkgdown.yml#L46
+
+github:
+  icon: fab fa-github fa-lg
+  href: https://github.com/EvaMaeRey/io
