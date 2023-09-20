@@ -1,23 +1,39 @@
 
+  - [Welcome and explanation](#welcome-and-explanation)
+  - [CV](#cv)
+  - [Bio](#bio)
+  - [Recent Talks](#recent-talks)
+  - [Projects and Goals](#projects-and-goals)
+  - [What I’m working on: my packages and
+    repos](#what-im-working-on-my-packages-and-repos)
+  - [unblogs: experiments and code
+    demos](#unblogs-experiments-and-code-demos)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# io
+# Welcome and explanation
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-> ‘Do not scatter your energies’. - a fortune cookie
+‘Do not scatter your energies’,
 
 These days I’m focused a lot on package building. I need a personal
 website update update. Instead of trying to reboot my blogdown website
-or convert to quarto, I’m just using package building architecture to
-create an updated personal webpage. I may explore some meta package
-writing here as well.
+or convert to quarto, I’m just using package building architecture via
+pkgdown to create an updated personal webpage. I may explore some meta
+package writing here as well.
 
-# link to cv cv
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
-TeX Updated on Dec 23, 2021
+\`\`\`
+
+# CV
+
+  - [cv](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.pdf)
+  - [link to update/suggest an
+    edit](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.Rnw)
 
 # Bio
 
@@ -32,7 +48,13 @@ as well as community building).
 
 For the last three years, I’ve worked in the Dean’s Data Cell at the
 United States Military Academy at West Point in a data analytics and
-teaching dual role.
+teaching dual role. I worked closely with stakeholders and other members
+of the data team to deliver actionable insights and meet institutional
+reporting requirments. I worked on the Deans Data Cell infrastructure
+towards, code-first, reproducible and elegant data products. I also
+taught sections of MA206 Introduction to Statistics and Probability in
+the Mathematics Department, and oversaw five independent studies focused
+on tool-building for statistical education.
 
 I have taught statistical methodology at the University of Denver’s
 Josef Korbel School of International Studies Visiting Teaching Assistant
@@ -79,13 +101,35 @@ export controls and have worked in lithium-ion battery failure
 diagnostics at the Chemical Engineering Division of Argonne National
 Laboratory.
 
-# my projects
+# Recent Talks
+
+  - [Speaking ggplot2, April 2022, West Point Data Analytics
+    Series](https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1)
+  - [Creating new geom\_\*s for richer statistical storytelling,
+    May 2022, West Point Department of Mathematics Talk
+    Series](https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2)
+  - [Flipbooks, January 2020, RStudio
+    Conference](https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408)
+  - [tidypivot]()
+  - [Extending ggplot2 statistical geometries, MAA Metro New York
+    May 2021](https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1)
+  - [Intro to Network Analysis and
+    Visualization](https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1)
+  - [Shallow Fakes: Assessing the potential for spoofing and faking in
+    data visualization and what to do about it, University of Denver May
+    2019]()
+
+# Projects and Goals
 
   - ggplot2 flipbook
   - a ggplot2 grammar guide
-  - easy geom recipes
+  - easy geom recipes: diving into defining compute\_group ggprotos
+  - more geom recipes: cases when compute\_group is not enough
+    (compute\_panel)
   - ggtedius workshop
   - ma206verse/stats101verse
+  - ggnc, ggnorthcarolina, ggbrazil, and beyond: geographic location
+    names as positional aesthetics
 
 # What I’m working on: my packages and repos
 
