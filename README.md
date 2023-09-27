@@ -1,5 +1,6 @@
 
   - [Welcome and explanation](#welcome-and-explanation)
+  - [Thesis](#thesis)
   - [CV](#cv)
   - [Bio](#bio)
   - [Recent Talks](#recent-talks)
@@ -27,11 +28,39 @@ package writing here as well.
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
-\`\`\`
+# Thesis
+
+There is a growing population of ggplot2 ‘super users’ that – given
+regular and prolonged ggplot2 use – have a strong working knowledge of
+the grammar of graphics principles and ggplot2-ic feel and API. Among
+the ranks of these super users are statistical educators, data
+visualization professionals, and seasoned data scientists.
+
+I posit that many folks in this group of super-users could find ggplot2
+extension immensely valuable. But that existing materials are falling
+short in reaching and enabling this group of extraordinary folks in
+moving into the extension space.
+
+Specifically, ggplot2 ‘super users’, if provided points of entry
+tailored to them, would be able to contribute to the ggplot2 extension
+eco-sphere in thoughtful, grammar-of-graphics-consistent ways.
+
+And such super-users, are likely to move rapidly into this space given
+that extension will afford more elegant and efficient workflows.
+
+Investment in ggplot2 extension education for these folks is likely to
+have many positive externalities. First, such users are likely to be
+interested in packaging their materials, providing their elegant and
+efficient workflow. This further would strengthen ranks in the R
+community’s package developer base.
+
+Finally, know-how in the extension space should lead to greater
+knowledge of the ggplot2 code base and could help build the ggplot2
+contributor-maintainer pool of talent.
 
 # CV
 
-  - [cv](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.pdf)
+  - [cv](https://evamaerey.github.io/cv/reynolds_evangeline_cv.pdf)
   - [link to update/suggest an
     edit](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.Rnw)
 
@@ -260,6 +289,6 @@ ma206\_tidyverse\_code\_movies HTML 2 Updated on Jan 16, 2021
 # unblogs: experiments and code demos
 
   - mytidytuesday
-  - featurette
-  - ggpuzzles minimal not-working examples
+  - featurette:
+  - ggpuzzles: space for untangling gg knots
   - hexes Creating some hex stickers for packages
