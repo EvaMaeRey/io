@@ -1,14 +1,27 @@
 
   - [Welcome and explanation](#welcome-and-explanation)
-  - [Thesis](#thesis)
   - [CV](#cv)
-  - [Bio](#bio)
   - [Recent Talks](#recent-talks)
   - [Projects and Goals](#projects-and-goals)
-  - [What I’m working on: my packages and
-    repos](#what-im-working-on-my-packages-and-repos)
+      - [Supporting ‘a new wave of ggplot2
+        extenders’](#supporting-a-new-wave-of-ggplot2-extenders)
+      - [Supporting newcomers to data visualization and
+        ggplot2](#supporting-newcomers-to-data-visualization-and-ggplot2)
+      - [Supporting statistical
+        learning](#supporting-statistical-learning)
+      - [Supporting new R package
+        developers](#supporting-new-r-package-developers)
+      - [Highlighting new opportuties in viz/ggplot2
+        extension](#highlighting-new-opportuties-in-vizggplot2-extension)
+          - [Rethinking positional aesthetics (beynod x and
+            y)](#rethinking-positional-aesthetics-beynod-x-and-y)
+          - [New points of entry as opposed to ggplot(), minimal data
+            transformation and/or
+            defaults](#new-points-of-entry-as-opposed-to-ggplot-minimal-data-transformation-andor-defaults)
+  - [Packages](#packages)
   - [unblogs: experiments and code
     demos](#unblogs-experiments-and-code-demos)
+  - [Bio](#bio)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -23,46 +36,137 @@
 These days I’m focused a lot on package building. I need a personal
 website update update. Instead of trying to reboot my blogdown website
 or convert to quarto, I’m just using package building architecture via
-pkgdown to create an updated personal webpage. I may explore some meta
-package writing here as well.
+pkgdown to create an updated personal webpage.
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
-
-# Thesis
-
-There is a growing population of ggplot2 ‘super users’ that – given
-regular and prolonged ggplot2 use – have a strong working knowledge of
-the grammar of graphics principles and ggplot2-ic feel and API. Among
-the ranks of these super users are statistical educators, data
-visualization professionals, and seasoned data scientists.
-
-I posit that many folks in this group of super-users could find ggplot2
-extension immensely valuable. But that existing materials are falling
-short in reaching and enabling this group of extraordinary folks in
-moving into the extension space.
-
-Specifically, ggplot2 ‘super users’, if provided points of entry
-tailored to them, would be able to contribute to the ggplot2 extension
-eco-sphere in thoughtful, grammar-of-graphics-consistent ways.
-
-And such super-users, are likely to move rapidly into this space given
-that extension will afford more elegant and efficient workflows.
-
-Investment in ggplot2 extension education for these folks is likely to
-have many positive externalities. First, such users are likely to be
-interested in packaging their materials, providing their elegant and
-efficient workflow. This further would strengthen ranks in the R
-community’s package developer base.
-
-Finally, know-how in the extension space should lead to greater
-knowledge of the ggplot2 code base and could help build the ggplot2
-contributor-maintainer pool of talent.
+<!-- I may explore some meta package writing here as well.  -->
 
 # CV
 
   - [cv](https://evamaerey.github.io/cv/reynolds_evangeline_cv.pdf)
   - [link to update/suggest an
     edit](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.Rnw)
+
+# Recent Talks
+
+  - [A New Wave of ggplot2 Extenders, at ASA COWY
+    chapter](https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-outline.html#1)
+
+  - [ggcirclepack and beyond: experiments in the compute\_panel space,
+    at ggplot2 extenders,
+    Spring 2023](https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1)
+
+  - [Speaking ggplot2, April 2022, West Point Data Analytics
+    Series](https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1)
+
+  - [Creating new geom\_\*s for richer statistical storytelling,
+    May 2022, West Point Department of Mathematics Talk
+    Series](https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2)
+
+  - [Flipbooks, January 2020, RStudio
+    Conference](https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408)
+
+  - [Elegant Statistical Narratives with ggxmean: MAA meeting, Poster
+    Philidelphia, 2022]()
+
+  - [tidypivot](MAA%20Metro%20New%20York%20May%202022)
+
+  - [Extending ggplot2 statistical geometries, MAA Metro New York
+    May 2021](https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1)
+
+  - [Intro to Network Analysis and
+    Visualization](https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1)
+
+  - [Shallow Fakes: Assessing the potential for spoofing and faking in
+    data visualization and what to do about it, University of Denver May
+    2019]()
+
+# Projects and Goals
+
+## Supporting ‘a new wave of ggplot2 extenders’
+
+There is a growing population of ggplot2 ‘super-users’ that – given
+their regular and long-term ggplot2 use – have a strong working
+knowledge of grammar of graphics principles and of ggplot2’s user
+interface. Among their ranks are statistics educators, data
+visualization professionals, and data scientists and statisticians.
+
+I will argue that many ggplot2 super-users could find creating ggplot2
+extensions very valuable, but that current educational materials are
+falling short in reaching and enabling many in this group. I’ll then
+discuss how new material could be tailored to this group and will
+introduce some such new points of entry. I’ll conclude by presenting how
+one new tutorial in this vein performed with a small group of statistics
+educators.
+
+<!-- There is a growing population of ggplot2 'super users' that -- given regular and prolonged ggplot2 use -- have a strong working knowledge of the grammar of graphics principles and ggplot2-ic feel and API.  Among the ranks of these super users are statistical educators, data visualization professionals, and seasoned data scientists. -->
+
+<!-- I posit that many folks in this group of super-users could find ggplot2 extension immensely valuable. But that existing materials are falling short in reaching and enabling this group of extraordinary folks in moving into the extension space.   -->
+
+<!-- Specifically, ggplot2 'super users', if provided points of entry tailored to them, would be able to contribute to the ggplot2 extension eco-sphere in thoughtful, grammar-of-graphics-consistent ways.   -->
+
+<!-- And such super-users, are likely to move rapidly into this space given that extension will afford more elegant and efficient workflows. -->
+
+<!-- Investment in ggplot2 extension education for these folks is likely to have many positive externalities.  First, such users are likely to be interested in packaging their materials, providing their elegant and efficient workflow.  This further would strengthen ranks in the R community's package developer base.   -->
+
+<!-- Finally, know-how in the extension space should lead to greater knowledge of the ggplot2 code base and could help build the ggplot2 contributor-maintainer pool of talent. -->
+
+  - easy geom recipes: diving into defining compute\_group ggprotos
+
+  - more geom recipes: cases when compute\_group is not enough
+    (compute\_panel)
+
+  - ggtedius workshop
+
+  - Coordinating ggplot2 extenders meetup/support group
+
+## Supporting newcomers to data visualization and ggplot2
+
+  - ggplot2 flipbook
+  - a ggplot2 grammar guide
+
+## Supporting statistical learning
+
+  - packages focus on intro stats
+
+  - ma206data with maintained with statistics faculty West Point’s Math
+
+## Supporting new R package developers
+
+  - ggtedius workshop
+  - readme2pkg and readme as package story, tocs and enumeration of
+    steps SeeEvaMaeRey/ggsmoothfit
+  - [A companion guide to Jim Hester’s, ‘You can make an R package in 20
+    minutes’](https://evamaerey.github.io/package_in_20_minutes/package_in_20_minutes)
+
+\`Books are meant to be read, … packages are not meant to be read and so
+I think it is kind’ - ‘R Packages: Q & A with Jenny Bryan’ around 3:00
+
+## Highlighting new opportuties in viz/ggplot2 extension
+
+### Rethinking positional aesthetics (beynod x and y)
+
+  - aes(fips = my\_fips\_var), e.g ggfips
+  - ggcirclepack
+  - ggcalendar
+
+### New points of entry as opposed to ggplot(), minimal data transformation and/or defaults
+
+  - ggverbatim()
+  - ggedgelist()
+  - ggbarlabs()
+
+positional aesthetics
+
+# Packages
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+# unblogs: experiments and code demos
+
+  - [mytidytuesday lab book](https://evamaerey.github.io/mytidytuesday/)
+  - [featurette](https://evamaerey.github.io/featurette/)
+  - ggpuzzles: space for untangling gg knots
+  - hexes Creating some hex stickers for packages
 
 # Bio
 
@@ -83,37 +187,33 @@ reporting requirments. I worked on the Deans Data Cell infrastructure
 towards, code-first, reproducible and elegant data products. I also
 taught sections of MA206 Introduction to Statistics and Probability in
 the Mathematics Department, and oversaw five independent studies focused
-on tool-building for statistical education.
+on tool-building for statistical education (2X Fall AY2022, 1X Spring
+AY2022, 2X Spring AY2023).
 
-I have taught statistical methodology at the University of Denver’s
-Josef Korbel School of International Studies Visiting Teaching Assistant
-Professor and have lectured at the Technische Universität Dresden’s
-Center for International Studies and have consulted on a project with
-the Violence Prevention Research Program at the University of California
-Davis. My PhD is from the University of Illinois, where my dissertation
-won 2018 Burkholder Award for Best Dissertation in the Political Science
-department of the University of Illinois.
+From Fall AY2018-Spring AY2020, I taught statistical methodology at the
+University of Denver’s Josef Korbel School of International Studies
+Visiting Teaching Assistant Professor, and previously lectured at the
+Technische Universität Dresden’s Center for International Studies
+(Spring AY2016 and Spring AY2018). My PhD is from the University of
+Illinois, where my dissertation won Burkholder Award for Best
+Dissertation in the Political Science Department of the University of
+Illinois.
 
-I study effectiveness of international institutions and law especially
-in the area of security. More broadly, my areas of study have been
-International Relations, Methodology, and Comparative Politics with an
-emphasis on Latin American Politics. My dissertation focused on
-compliance with supranational law, using UN Security Council resolutions
-as my principle case; I conducted dissertation field research in Brazil
-in the Federal House of Deputies.
+I focus was on international institutions and law especially in the area
+of security. More broadly, my areas of study have been International
+Relations, Methodology, and Comparative Politics with an emphasis on
+Latin American Politics. My dissertation focused on compliance with
+supranational law, focusing on the UN Security Council resolutions as my
+principle case; I conducted dissertation field research in Brazil in the
+Federal House of Deputies.
 
-I have extensive experience in data analysis and teaching data science.
-I worked as a statistics consultant, at the Applied Technologies of the
-Arts and Science (ATLAS), at the University of Illinois from 2013-2015.
-I also served “Methods TA” in Political Science in the 2015-2016
-academic year at the University of Illinois, providing assistance and
-expertise both to undergraduate and graduate students. At TU Dresden, in
-2018, I designed and taught a course introducing students to data
-science tools and statistical analysis for political research. I
-primarily teach methodology and data science courses at the Korbel
-School. Research interests in methodology include communicating
-uncertainty, visual exposition of statistical concepts and electoral
-rules.
+During my Phd, I worked as a statistics consultant, at the Applied
+Technologies of the Arts and Science (ATLAS), at the University of
+Illinois from 2013-2015. I also served “Methods TA” in Political Science
+in the 2015-2016 academic year at the University of Illinois, providing
+assistance and expertise both to undergraduate and graduate students. At
+TU Dresden, in 2018, I designed and taught a course introducing students
+to data science tools and statistical analysis for political research.
 
 I have been awarded the Fulbright Fellowship (Argentina 2008), Foreign
 Language and Area Studies Fellowships (2009-2011), Nelle Signor Travel
@@ -129,166 +229,3 @@ Commerce’s Bureau of Industry and Security in chemical and biological
 export controls and have worked in lithium-ion battery failure
 diagnostics at the Chemical Engineering Division of Argonne National
 Laboratory.
-
-# Recent Talks
-
-  - [Speaking ggplot2, April 2022, West Point Data Analytics
-    Series](https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1)
-  - [Creating new geom\_\*s for richer statistical storytelling,
-    May 2022, West Point Department of Mathematics Talk
-    Series](https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2)
-  - [Flipbooks, January 2020, RStudio
-    Conference](https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408)
-  - [tidypivot]()
-  - [Extending ggplot2 statistical geometries, MAA Metro New York
-    May 2021](https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1)
-  - [Intro to Network Analysis and
-    Visualization](https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1)
-  - [Shallow Fakes: Assessing the potential for spoofing and faking in
-    data visualization and what to do about it, University of Denver May
-    2019]()
-
-# Projects and Goals
-
-  - ggplot2 flipbook
-  - a ggplot2 grammar guide
-  - easy geom recipes: diving into defining compute\_group ggprotos
-  - more geom recipes: cases when compute\_group is not enough
-    (compute\_panel)
-  - ggtedius workshop
-  - ma206verse/stats101verse
-  - ggnc, ggnorthcarolina, ggbrazil, and beyond: geographic location
-    names as positional aesthetics
-
-# What I’m working on: my packages and repos
-
-ggtedious a demo package for messages, warnings, errors and test in
-ggplot2 extension “Testing your code can be painful and tedious, but it
-greatly increases the quality of your code.”
-
-ggsmoothfit extending stat\_smooth to return fitted values and residuals
-R 1 Updated last week more\_theme\_easing\_ideas R Updated last week
-
-ggols visual expositions of simpler linear models CSS 6 1 Other Updated
-2 weeks ago ggverbatim tabular data to tabular viz R 2 Updated 3 weeks
-ago
-
-readme2pkg collection of functions to write packages and promo mostly
-from within README.Rmd R Updated 3 weeks ago
-
-ggjudge Say what you think about a plot up front R Updated 3 weeks ago
-
-flipbookr Presenting code step-by-step and side-by-side with its output
-R 191 19 Other Updated 3 weeks ago
-
-ggwipe remove stat and geom layers from plot; return the last plot but
-wiped Updated last month
-
-gglobalclocks global clocks\! 1 Updated on Jul 23
-
-ggnorthcarolina R 3 Updated on Jul 20
-
-tidybernoulli probability branching in data frames matrix probability
-tidy-data
-
-ggnc North Carolina specific geoms experiment HTML Updated on Jun 27
-easy-geom-recipes
-
-tidypivot Declarative group-wise count and compute, describing your
-target table R 8 Other Updated on Jun 22
-
-ggdistricts R Updated on Jun 15
-
-ggstates R Updated on Jun 12
-
-ggbody using ggplot2 w/ body atlases R 1 Updated on May 30
-
-ma206distributions data-science ggplot2 statistics data-analysis R 2
-Other Updated on May 1
-
-ggfips A new approach to ggplot spatial APIs as demonstrated with with
-county fips codes R 1 Updated on Apr 26
-
-everyday\_ggplot2\_extension a practical approach to ggplot2 extension 4
-Updated on Apr 26
-
-tidytitanic flat versions of the r titanic data R 1 Other Updated on Apr
-17
-
-ggbrazil Updated on Apr 17
-
-ggcirclepack Experimental; write up for ggplot2 extenders meet up R 4
-Updated on Apr 14 ma206equations Make writing equations easy in markdown
-and plots R Other Updated on Apr 10
-
-codequote4shiny Return R code that will produce plot/df/text in a shiny
-app. For package demos and teaching purposes 1 Updated on Mar 9
-
-ggchalkboard R 2 Updated on Nov 26, 2022
-
-ggxmean R 60 3 MIT License Updated on Oct 11, 2022
-
-tidytuesday\_colorswatches leaf through tidytuesday datasets HTML 1
-Updated on Oct 5, 2022
-
-ggsample spin off of ggxmean, educational, random sampling,
-bootstrapping etc R 1 Other Updated on Aug 19, 2022
-
-tabylextra For flattening, lengthening janitor tabyls R 1 Updated on Jul
-7, 2022
-
-ggstamp stamp\_\* as an API for annotation layers R 37 Updated on Jun
-27, 2022
-
-ma206datapackageresourses Private Share and prepare to build ma206data
-package Updated on Apr 27, 2022 ggpivot
-
-ggpivot
-
-ggquiet R 1 Other Updated on Jan 17, 2022 codeexplode explodes code CSS
-2 Other Updated on Jan 17, 2022
-
-doublecrochet Show .Rmd source paired with output\! JavaScript 8 Other
-Updated on Jan 8, 2022
-
-ggextend a toy package with examples of ggplot extension functions R 1
-Updated on Oct 25, 2021
-
-ay\_2022\_2\_advanced\_individual\_study- Here, laying out some
-objectives for independent study, MA489\! HTML 1 Updated on Oct 12, 2021
-
-ggmemory parsing and presenting viz and manipulation code pipeline
-history using xaringan and flipbookr CSS 1 Other Updated on Oct 9, 2021
-
-exampleexploder explodes examples R Other Updated on Aug 20, 2021
-
-codehover Forked from arthurwelle/codehover Hoverable HTML Table for
-Displaying Intermediary Code Results (e.g. Pipes) R Updated on Aug 16,
-2021
-
-ggdirect Some functions that do more calculation in the background to
-get you there faster – especially focusing on direct labeling. R 1
-Updated on Aug 14, 2021
-
-xaringanPrinter convert xaringan/remark.js slides to Xaringan R 7 1
-Other Updated on Jun 22, 2021 xaringanBuilder Forked from
-jhelvy/renderthis An R package for building xaringan slides into
-multiple outputs, including html, pdf, png, gif, pptx, and mp4. R Other
-Updated on Jun 20, 2021
-
-madlibs For replacing words with blanks, or partial replacement of word
-with blanks CSS 1 Other Updated on May 8, 2021 package\_templates\_plus
-Where do the rendered package templates get to live or key package
-examples? Right here. HTML Updated on Apr 14, 2021
-
-teaching\_spring\_2021 Some stuff for the students HTML Updated on Mar
-17, 2021 education.rstudio.com
-
-ma206\_tidyverse\_code\_movies HTML 2 Updated on Jan 16, 2021
-
-# unblogs: experiments and code demos
-
-  - mytidytuesday
-  - featurette:
-  - ggpuzzles: space for untangling gg knots
-  - hexes Creating some hex stickers for packages
