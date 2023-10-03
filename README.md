@@ -90,13 +90,11 @@ knowledge of grammar of graphics principles and of ggplot2’s user
 interface. Among their ranks are statistics educators, data
 visualization professionals, and data scientists and statisticians.
 
-I will argue that many ggplot2 super-users could find creating ggplot2
-extensions very valuable, but that current educational materials are
-falling short in reaching and enabling many in this group. I’ll then
-discuss how new material could be tailored to this group and will
-introduce some such new points of entry. I’ll conclude by presenting how
-one new tutorial in this vein performed with a small group of statistics
-educators.
+The assertion of this project is that many ggplot2 super-users could
+find creating ggplot2 extensions very valuable, but that current
+educational materials are falling short in reaching and enabling many in
+this group. I’ll then discuss how new material could be tailored to this
+group and will introduce some such new points of entry.
 
 <!-- There is a growing population of ggplot2 'super users' that -- given regular and prolonged ggplot2 use -- have a strong working knowledge of the grammar of graphics principles and ggplot2-ic feel and API.  Among the ranks of these super users are statistical educators, data visualization professionals, and seasoned data scientists. -->
 
