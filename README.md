@@ -205,7 +205,7 @@ supranational law, focusing on the UN Security Council resolutions as my
 principle case; I conducted dissertation field research in Brazil in the
 Federal House of Deputies.
 
-During my Phd, I worked as a statistics consultant, at the Applied
+During my PhD, I worked as a statistics consultant, at the Applied
 Technologies of the Arts and Science (ATLAS), at the University of
 Illinois from 2013-2015. I also served “Methods TA” in Political Science
 in the 2015-2016 academic year at the University of Illinois, providing
