@@ -42,14 +42,14 @@ pkgdown to create an updated personal webpage.
 
 # CV
 
-  - [cv](https://evamaerey.github.io/cv/reynolds_evangeline_cv.pdf)
+  - [cv](https://evamaerey.github.io/io/reynolds_evangeline_cv.pdf)
   - [link to update/suggest an
-    edit](https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.Rnw)
+    edit](https://github.com/EvaMaeRey/io/blob/main/reynolds_evangeline_cv.Rnw)
 
 # Recent Talks
 
-  - [A New Wave of ggplot2 Extenders, at ASA COWY
-    chapter](https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-outline.html#1)
+  - [A New Wave of ggplot2 Extenders, at ASA COWY chapter
+    bit.ly/ggextend-cowy](https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-outline.html#1)
 
   - [ggcirclepack and beyond: experiments in the compute\_panel space,
     at ggplot2 extenders,
@@ -59,16 +59,18 @@ pkgdown to create an updated personal webpage.
     Series](https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1)
 
   - [Creating new geom\_\*s for richer statistical storytelling,
-    May 2022, West Point Department of Mathematics Talk
+    May 2022, West Point Department of Mathematics Speaker
     Series](https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2)
 
   - [Flipbooks, January 2020, RStudio
     Conference](https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408)
 
   - [Elegant Statistical Narratives with ggxmean: MAA meeting, Poster
-    Philidelphia, 2022]()
+    Philidelphia,
+    August, 2022](https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png)
 
-  - [tidypivot](MAA%20Metro%20New%20York%20May%202022)
+  - [tidypivot, MAA Metro New York
+    May 2022](https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1)
 
   - [Extending ggplot2 statistical geometries, MAA Metro New York
     May 2021](https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1)
@@ -157,7 +159,45 @@ positional aesthetics
 
 # Packages
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+[codeexplode](https://github.com/EvaMaeRey/codeexplode),
+[codehover](https://github.com/EvaMaeRey/codehover),
+[doublecrochet](https://github.com/EvaMaeRey/doublecrochet),
+[exampleexploder](https://github.com/EvaMaeRey/exampleexploder),
+[formatR](https://github.com/EvaMaeRey/formatR),
+[ggbarlabs](https://github.com/EvaMaeRey/ggbarlabs),
+[ggbody](https://github.com/EvaMaeRey/ggbody),
+[ggbrasil](https://github.com/EvaMaeRey/ggbrasil),
+[ggcalendar](https://github.com/EvaMaeRey/ggcalendar),
+[ggchile](https://github.com/EvaMaeRey/ggchile),
+[ggcirclepack](https://github.com/EvaMaeRey/ggcirclepack),
+[ggdirect](https://github.com/EvaMaeRey/ggdirect),
+[ggdistrics](https://github.com/EvaMaeRey/ggdistrics),
+[ggdistricts](https://github.com/EvaMaeRey/ggdistricts),
+[ggextend](https://github.com/EvaMaeRey/ggextend),
+[ggfips](https://github.com/EvaMaeRey/ggfips),
+[ggjudge](https://github.com/EvaMaeRey/ggjudge),
+[ggmemory](https://github.com/EvaMaeRey/ggmemory),
+[ggnc](https://github.com/EvaMaeRey/ggnc),
+[ggnorthcarolina](https://github.com/EvaMaeRey/ggnorthcarolina),
+[ggols](https://github.com/EvaMaeRey/ggols),
+[ggpivot](https://github.com/EvaMaeRey/ggpivot),
+[ggsample](https://github.com/EvaMaeRey/ggsample),
+[ggsmoothfit](https://github.com/EvaMaeRey/ggsmoothfit),
+[ggstamp](https://github.com/EvaMaeRey/ggstamp),
+[ggstates](https://github.com/EvaMaeRey/ggstates),
+[ggverbatim](https://github.com/EvaMaeRey/ggverbatim),
+[ggxmean](https://github.com/EvaMaeRey/ggxmean),
+[io](https://github.com/EvaMaeRey/io),
+[ma206data](https://github.com/EvaMaeRey/ma206data),
+[ma206distributions](https://github.com/EvaMaeRey/ma206distributions),
+[ma206equations](https://github.com/EvaMaeRey/ma206equations),
+[poeml](https://github.com/EvaMaeRey/poeml),
+[readme2pkg](https://github.com/EvaMaeRey/readme2pkg),
+[tabylextra](https://github.com/EvaMaeRey/tabylextra),
+[tidybernoulli](https://github.com/EvaMaeRey/tidybernoulli),
+[tidypivot](https://github.com/EvaMaeRey/tidypivot),
 
 # unblogs: experiments and code demos
 
@@ -168,42 +208,44 @@ positional aesthetics
 
 # Bio
 
-Hello and welcome\! I’m a data scientist and educator that’s especially
-passionate about using visualization to facilitate communication and
-statistical learning. I’m particularly motivated by the elegance and
-power of the “Grammar of Graphics” framework, and am exploring how to
-further empower ggplot2 users to take advantage of the extension space
-by 1) working on new extension packages for statistical education and 2)
-providing new points of entry into the ggplot2 world (tutorials/recipes
-as well as community building).
+Hello and welcome\! I’m a data scientist, software developer, and
+educator who is passionate about using visualization to facilitate
+communication about data and in statistical principles. I’m particularly
+motivated by the elegance and power of the “Grammar of Graphics”
+framework, and am exploring how to further empower ggplot2 users to take
+advantage of the extension space by 1) working on new extension packages
+for statistical education and 2) providing new points of entry into the
+ggplot2 world (tutorials/recipes as well as community building).
 
 For the last three years, I’ve worked in the Dean’s Data Cell at the
 United States Military Academy at West Point in a data analytics and
 teaching dual role. I worked closely with stakeholders and other members
 of the data team to deliver actionable insights and meet institutional
-reporting requirments. I worked on the Deans Data Cell infrastructure
-towards, code-first, reproducible and elegant data products. I also
-taught sections of MA206 Introduction to Statistics and Probability in
-the Mathematics Department, and oversaw five independent studies focused
-on tool-building for statistical education (2X Fall AY2022, 1X Spring
-AY2022, 2X Spring AY2023).
+reporting requirements. I worked on the Deans Data Cell infrastructure
+towards code-first, reproducible and elegant data products that could be
+easily interpreted by a wide audience. I also taught sections of
+Introduction to Statistics and Probability (MA206) in the Mathematics
+Department, and oversaw five independent studies focused on
+tool-building for statistical education (Brown and McGovern in Fall
+AY2022, Brown in Spring AY2022, and Folorunso and Jax Spring AY2023).
 
 From Fall AY2018-Spring AY2020, I taught statistical methodology at the
-University of Denver’s Josef Korbel School of International Studies
-Visiting Teaching Assistant Professor, and previously lectured at the
-Technische Universität Dresden’s Center for International Studies
-(Spring AY2016 and Spring AY2018). My PhD is from the University of
-Illinois, where my dissertation won Burkholder Award for Best
-Dissertation in the Political Science Department of the University of
-Illinois.
+University of Denver’s Korbel School of International Studies. During
+this period, I won an R Consortium, which allowed me to work with six
+graduate student researchers to advance that project (B., C., L., S., R.
+Ryan). I had previously lectured at the Technische Universität Dresden’s
+Center for International Studies on international organizations and
+statistical methodology (Spring AY2016 and Spring AY2018).
 
-I focus was on international institutions and law especially in the area
-of security. More broadly, my areas of study have been International
-Relations, Methodology, and Comparative Politics with an emphasis on
-Latin American Politics. My dissertation focused on compliance with
-supranational law, focusing on the UN Security Council resolutions as my
-principle case; I conducted dissertation field research in Brazil in the
-Federal House of Deputies.
+My PhD is from the University of Illinois, where my dissertation won
+Burkholder Award for Best Dissertation in the Political Science
+Department of the University of Illinois. I focus was on international
+institutions and law especially in the area of security. More broadly,
+my areas of study have been International Relations, Methodology, and
+Comparative Politics with an emphasis on Latin American Politics. My
+dissertation focused on compliance with supranational law, focusing on
+the UN Security Council resolutions as my principle case; I conducted
+dissertation field research in Brazil in the Federal House of Deputies.
 
 During my PhD, I worked as a statistics consultant, at the Applied
 Technologies of the Arts and Science (ATLAS), at the University of
