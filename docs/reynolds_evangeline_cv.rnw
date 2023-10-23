@@ -61,7 +61,7 @@
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 
 \moveright-.68\hoffset\centerline{\normalsize{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%Hoyerswerdaer Stra\ss{}e 23 01099,
-West Point, New York  $\bullet$  \url{evangeline.reynolds@du.edu}} $\bullet$ \href{evangelinereynolds.netlify.com}{evangelinereynolds.netlify.com}} % Your name at the top
+West Point, New York  $\bullet$  \url{evangeline.reynolds@westpoint.edu}} $\bullet$ \href{evangelinereynolds.netlify.com}{evangelinereynolds.netlify.com}} % Your name at the top
 % \moveleft-1.7\hoffset\centerline{\normalsize{ $\bullet$ \href{evangelinereynolds.netlify.com}{evangelinereynolds.netlify.com}}} % Your name at the top
 
 % Department of Political Science     ~~~~~~~~~~~~~~   \\Tel: 708-308-8037\\
@@ -78,11 +78,13 @@ West Point, New York  $\bullet$  \url{evangeline.reynolds@du.edu}} $\bullet$ \hr
 %----------------------------------------------------------------------------------------
 %	OBJECTIVE SECTION
 %----------------------------------------------------------------------------------------
-\section{Position}
+\section{Last Position}
 
-Assistant Professor/Data Analyst \\
+Data Manager, Dean's Data Cell
+Department of Mathematical Sciences, Assistant Professor \\
+40 hr per week
 \\
-US Military Academy, from 2020 \\
+US Military Academy, from 2020-2023 \\
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -107,7 +109,7 @@ BS 2004, Wheaton College, Magna Cum Laude
 
 Visiting Assistant Professor, Korbel School of International Studies, University of Denver,  2018-2020 \\
 Lecturer, Technische Universit\"{a}t Dresden, 2017-2018 \\
-Analyst, University of California Davis, contract, 2017-2018 \\
+Consulting Analyst, University of California Davis, contract, 2017-2018 \\
 License Officer, US Department of Commerce 2005-2007 \\
 Laboratory Assistant, Argonne National Laboratory 2004-2005 \\
 
@@ -118,17 +120,18 @@ Laboratory Assistant, Argonne National Laboratory 2004-2005 \\
 %  Strategy and Policy, course  Johns Hopkins University, School for Advanced International Studies, Summer 2006.%
   % \end{quotation}
 
+\section{Featured teaching and advising projects}
 
 \section{Research and Teaching Interests}
 
 Political Methodology\\
-\emph{Causal and Randomization Inference, Text Analysis, Panel and TSCS Data Analysis, Reproduciblity, Data Visualization, Human-Computer Interaction}
+\emph{Data Visualization, Causal and Randomization Inference, Text Analysis, Panel and TSCS Data Analysis, Reproduciblity, Human-Computer Interaction}
 
 International Relations\\
-\emph{International Organizations, International Law and Compliance, Security, Arms Control, International Trade}
+\emph{International Organizations, International Law and Compliance, International Security}
 
 Comparative Politics\\
-\emph{Latin American Politcs, Politics in Developing Countries, German Electoral Politics}
+\emph{Latin American Politcs}
 
 \section{Awards}%, and Offers}
 
@@ -142,20 +145,16 @@ Foreign Language and Area Studies Fellowship, Summer 2009 - Salvador, Brazil and
 Fulbright Argentina Country Program, March-December, 2008\\[6pt]%
 National Security Education Program Scholarship, for study in Chile, 2003\\[6pt]%
 
-
-
-
 \section{Publications}
 
-E. Reynolds, A. Oliveira, J. Onuki,
- and M. Winters. 2017. \emph{\href{http://www.tandfonline.com/doi/abs/10.1080/03050629.2018.1408012}{Attitudes Toward Consent-Based and Non-Consent-Based International Law in a Regional Power Context}}, International Interactions.\\[6pt]
+E. Reynolds, A. Oliveira, J. Onuki, and M. Winters. 2017. \emph{\href{http://www.tandfonline.com/doi/abs/10.1080/03050629.2018.1408012}{Attitudes Toward Consent-Based and Non-Consent-Based International Law in a Regional Power Context}}, International Interactions.\\[6pt]
 E. Reynolds and M. Winters. 2016. \emph{\href{http://rap.sagepub.com/content/3/1/2053168015626167}{Foreign Aid Funnel? A Placebo-Based Assessment of Aid Flows to Non-Permanent U.N. Security Council Members}}, Research and Politics. \\[6pt]%April
 D. Abraham, E. Reynolds, P. Schultz, A. Jansen, and D. Dees. 2006. \emph{\href{http://jes.ecsdl.org/content/153/8/A1610.abstract}{Temperature Dependence of Capacity and Impedance Data from Fresh and Aged High-Power Lithium-Ion Cells}}, Journal of Electrochemical. Society, 153(8): A1610-A1616. \\[6pt]%
 D. Abraham, E. Reynolds, E. Sammann , A. Jansen,  D. Dees. 2005. \emph{\href{http://www.sciencedirect.com/science/article/pii/S0013468605004433}{Aging Characteristics of High-Power Lithium-Ion Cells with LiNi\textsubscript{0.8}Co\textsubscript{0.15}Al\textsubscript{0.05}O\textsubscript{2} and Li\textsubscript{4/3}Ti\textsubscript{5/3}O\textsubscript{4} electrodes}}, Electrochimica Acta 51(3): 502-510.%
 
-\section{Textbook}
-
-\emph{\href{https://evamaerey.github.io/flipbooks/textbook}{The R Flipbook Textbook: A introduction to data manipulation, visualization, and statistical analysis with dynamic examples}} under development
+% \section{Textbook}
+%
+% \emph{\href{https://evamaerey.github.io/flipbooks/textbook}{The R Flipbook Textbook: A introduction to data manipulation, visualization, and statistical analysis with dynamic examples}} under development
 
 
 \section{Selected Working Papers}

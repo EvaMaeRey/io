@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 OCT 2023 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 OCT 2023 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,28 +314,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 114.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--163
-
- []
-
-
-Overfull \hbox (0.36685pt too wide) in paragraph at lines 177--179
-\OT1/cmr/m/it/10 International Or-ga-ni-za-tions, In-ter-na-tional Law and Com-
-pli-ance, Se-cu-rity, Arms Con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--197
 
  []
 
@@ -348,7 +337,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 214--218
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
 
  []
 
@@ -356,63 +345,63 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 269--282
+Underfull \hbox (badness 10000) in paragraph at lines 268--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--290
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
 
  []
 
 [3]
-Overfull \hbox (2.2554pt too wide) in paragraph at lines 388--397
+Overfull \hbox (2.2554pt too wide) in paragraph at lines 387--396
 \OT1/cmr/m/n/10 Sta-tis-ti-cal Meth-ods Teach-ing Sup-port, Re-search De-sign P
 S 199 with James
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--397
+Underfull \hbox (badness 10000) in paragraph at lines 387--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--437
+Underfull \hbox (badness 10000) in paragraph at lines 431--436
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
 
-Overfull \hbox (31.02055pt too wide) in paragraph at lines 439--445
+Overfull \hbox (31.02055pt too wide) in paragraph at lines 438--444
 [][]\OT1/cmr/m/n/10 Professor Brian Gaines[][], Pro-fes-sor of Po-lit-i-cal Sci
 -ence, +1-217-333-4367, bj-gaines@illinois.edu 
  []
 
 
-Overfull \hbox (25.14436pt too wide) in paragraph at lines 439--445
+Overfull \hbox (25.14436pt too wide) in paragraph at lines 438--444
 [][]\OT1/cmr/m/n/10 Professor Rose Ka-gawa[][], As-sis-tant Pro-fes-sor Ph.D, M
 .P.H., UC Davis, rk-a-gawa@ucdavis.edu 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--445
+Underfull \hbox (badness 10000) in paragraph at lines 438--444
 
  []
 
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 445.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
  ) 
 Here is how much of TeX's memory you used:
  5875 strings out of 493089
  85852 string characters out of 6134842
- 182298 words of memory out of 5000000
+ 181298 words of memory out of 5000000
  9318 multiletter control sequences out of 15000+600000
  6660 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,11n,43p,454b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,454b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
@@ -421,10 +410,10 @@ local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on reynolds_evangeline_cv.pdf (4 pages, 119473 bytes).
+Output written on reynolds_evangeline_cv.pdf (4 pages, 120194 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,86 +1,91 @@
 
-  - [Welcome and explanation](#welcome-and-explanation)
-  - [CV](#cv)
-  - [Recent Talks](#recent-talks)
-  - [Projects and Goals](#projects-and-goals)
-      - [Supporting ‘a new wave of ggplot2
-        extenders’](#supporting-a-new-wave-of-ggplot2-extenders)
-      - [Supporting newcomers to data visualization and
-        ggplot2](#supporting-newcomers-to-data-visualization-and-ggplot2)
-      - [Supporting statistical
-        learning](#supporting-statistical-learning)
-      - [Supporting new R package
-        developers](#supporting-new-r-package-developers)
-      - [Highlighting new opportuties in viz/ggplot2
-        extension](#highlighting-new-opportuties-in-vizggplot2-extension)
-          - [Rethinking positional aesthetics (beynod x and
-            y)](#rethinking-positional-aesthetics-beynod-x-and-y)
-          - [New points of entry as opposed to ggplot(), minimal data
-            transformation and/or
-            defaults](#new-points-of-entry-as-opposed-to-ggplot-minimal-data-transformation-andor-defaults)
-  - [Packages](#packages)
-  - [unblogs: experiments and code
-    demos](#unblogs-experiments-and-code-demos)
-  - [Bio](#bio)
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Welcome and explanation
+<br> <br>
+
+# Evangeline ‘Gina’ Reynolds, PhD
+
+Welcome to my website\!
+
+Below you’ll find talk materials, publications and working papers,
+software packages, project homepages, and my bio. You can find my CV
+[**here**](https://evamaerey.github.io/io/reynolds_evangeline_cv.pdf).
+To suggest an edit or update, click
+[here](https://github.com/EvaMaeRey/io/blob/main/docs/reynolds_evangeline_cv.rnw).
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-‘Do not scatter your energies’,
+<!-- 'Do not scatter your energies',  -->
 
-These days I’m focused a lot on package building. I need a personal
-website update update. Instead of trying to reboot my blogdown website
-or convert to quarto, I’m just using package building architecture via
-pkgdown to create an updated personal webpage.
+<!-- These days I'm focused a lot on package building.  I need a personal website update update.  Instead of trying to reboot my blogdown website or convert to quarto, I'm just using package building architecture via pkgdown to create an updated personal webpage.   -->
 
 <!-- I may explore some meta package writing here as well.  -->
 
-# CV
-
-  - [cv](https://evamaerey.github.io/io/reynolds_evangeline_cv.pdf)
-  - [link to update/suggest an
-    edit](https://github.com/EvaMaeRey/io/blob/main/reynolds_evangeline_cv.Rnw)
-
 # Recent Talks
 
-  - [A New Wave of ggplot2 Extenders, at ASA COWY chapter
-    bit.ly/ggextend-cowy](https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-outline.html#1)
+<!-- [![A mushroom-head robot](/assets/images/codey.jpg 'Codey the Codecademy mascot')](https://codecademy.com) -->
 
-  - [ggcirclepack and beyond: experiments in the compute\_panel space,
-    at ggplot2 extenders,
-    Spring 2023](https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1)
+<!-- [![A mushroom-head robot](/docs/title-slide/Untitled.png 'Codey the Codecademy mascot')](https://codecademy.com) -->
 
-  - [Speaking ggplot2, April 2022, West Point Data Analytics
-    Series](https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1)
+``` r
+my_talks <- tibble::tribble(
+  ~short_ref, ~date, ~location, ~title, ~url, ~org,
+  "ggplot2_new_wave", "October 2023", "Denver", "A New Wave of ggplot2 Extenders", "https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1", "CO-WY Chapter, American Statistical Association",
+  "ggcirclepack_beyond", "March 2023", "Virtual meeting", "ggcirclepack and beyond: experiments in the compute_panel space, at ggplot2 extenders", "https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1", "ggplot2 extenders meetup",
+  "primer_wp", "April 2022", "New York", "Speaking ggplot2", "https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1", "West Point Data Analytics Series",
+  "stats_geoms_wp", "May 2022", "New York", "Creating new geom_*s for richer statistical storytelling", "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2", "West Point Department of Mathematics Speaker Series",
+  "flipbooks", "January 2020", "San Francisco", "Flipbooks", "https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408", "RStudio Conference",
+  "ggxmean_maa", "August 2022", "Philadelphia", "Elegant Statistical Narratives with ggxmean: MAA meeting, Poster", "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png", "Mathematical Association of America",
+  "tidypivot_maa", "May 2022", "New York", "tidypivot: declarative table builds", "https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1", "Mathematical Association of America - Metro New York",
+  "network_du", "April 2020", "Denver", "Intro to Network Analysis and Visualization", "https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1", "Korbel School of International Studies, University of Denver",
+  "shallow_fakes", "May 2019", "Denver", "Shallow Fakes: Assessing the potential for spoofing and faking in data visualization and what to do about it", "URL", "Korbel School of International Studies, University of Denver"
+)
+```
 
-  - [Creating new geom\_\*s for richer statistical storytelling,
-    May 2022, West Point Department of Mathematics Speaker
-    Series](https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2)
+``` r
+make_png_path <- function(info_frame, which){ paste0("man/title-slides/", info_frame$short_ref[which], ".png")}
 
-  - [Flipbooks, January 2020, RStudio
-    Conference](https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408)
+save_webshot_to_man <- function(info_frame, which){
+  
+  webshot2::webshot(url = info_frame$url[which], 
+                  file = make_png_path(info_frame, which))
 
-  - [Elegant Statistical Narratives with ggxmean: MAA meeting, Poster
-    Philidelphia,
-    August, 2022](https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png)
+}
 
-  - [tidypivot, MAA Metro New York
-    May 2022](https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1)
+write_html_hyper_image <- function(info_frame, which){
+  
+  
+  path_png <- make_png_path(info_frame, which)
+  
+  if(!exists(path_png)){
+    
+    save_webshot_to_man(info_frame, which)
+    
+  }else{
+    
+    return(
+      paste0(
+      '<a href="',url,'" width = "33%">
+<img src="', png_path, '"/>
+</a>'
 
-  - [Extending ggplot2 statistical geometries, MAA Metro New York
-    May 2021](https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1)
+)
+      
+    )
+    
+  }
+  
+}
+```
 
-  - [Intro to Network Analysis and
-    Visualization](https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1)
+``` r
+dir.create("man/title-slides")
+write_html_hyper_image(my_talks, which = 1)
+```
 
-  - [Shallow Fakes: Assessing the potential for spoofing and faking in
-    data visualization and what to do about it, University of Denver May
-    2019]()
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 # Projects and Goals
 
@@ -159,7 +164,7 @@ positional aesthetics
 
 # Packages
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 [codeexplode](https://github.com/EvaMaeRey/codeexplode),
 [codehover](https://github.com/EvaMaeRey/codehover),
@@ -232,10 +237,11 @@ AY2022, Brown in Spring AY2022, and Folorunso and Jax Spring AY2023).
 From Fall AY2018-Spring AY2020, I taught statistical methodology at the
 University of Denver’s Korbel School of International Studies. During
 this period, I won an R Consortium, which allowed me to work with six
-graduate student researchers to advance that project (B., C., L., S., R.
-Ryan). I had previously lectured at the Technische Universität Dresden’s
-Center for International Studies on international organizations and
-statistical methodology (Spring AY2016 and Spring AY2018).
+graduate student researchers to advance that project (Granier, Goodman,
+Picci, Thapa, Surrency, Woodrum). I had previously lectured at the
+Technische Universität Dresden’s Center for International Studies on
+international organizations and statistical methodology (Spring AY2016
+and Spring AY2018).
 
 My PhD is from the University of Illinois, where my dissertation won
 Burkholder Award for Best Dissertation in the Political Science

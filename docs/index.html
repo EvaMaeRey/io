@@ -6,104 +6,104 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="What the package does (one paragraph).">
-<title>What the Package Does (One Line, Title Case) • io</title>
+<!-- Inform modern browsers that this page supports both dark and light color schemes,
+  and the page author prefers light. --><meta name="color-scheme" content="dark light">
+<script>
+  // If `prefers-color-scheme` is not supported, fall back to light mode.
+  // i.e. In this case, inject the `light` CSS before the others, with
+  // no media filter so that it will be downloaded with highest priority.
+  if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+    document.documentElement.style.display = "none";
+    document.head.insertAdjacentHTML(
+      "beforeend",
+      "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/5/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
+    );
+  }
+</script><title>What the Package Does (One Line, Title Case) • io</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
 <meta property="og:description" content="What the package does (one paragraph).">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<![endif]--><!-- Flatly Theme - Light  --><link id="css-light" rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+<!-- Darkly Theme - Dark --><link id="css-dark" rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css" media="(prefers-color-scheme: dark)">
+<!-- preferably CSS --><link rel="stylesheet" href="preferably.css">
+<link id="css-code-light" rel="stylesheet" href="code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+<link id="css-code-dark" rel="stylesheet" href="code-color-scheme-dark.css" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
     
     <a class="navbar-brand me-2" href="index.html">io</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto">
-<li class="nav-item">
-  <a class="nav-link" href="reference/index.html">Reference</a>
-</li>
-<li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/more.html">more</a>
-  </div>
-</li>
-      </ul>
+    <div id="navbar" class="collapse navbar-collapse ms-2">
+      <ul class="navbar-nav me-auto"></ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav"></ul>
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">
+    <span class="fa fa-lightbulb"></span>
+     
+    News
+  </a>
+</li>
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/EvaMaeRey/io/">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+
+        
+        
+        
+      </ul>
 </div>
 
     
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><ul>
-<li><a href="#welcome-and-explanation">Welcome and explanation</a></li>
-<li><a href="#cv">CV</a></li>
-<li><a href="#recent-talks">Recent Talks</a></li>
-<li>
-<a href="#projects-and-goals">Projects and Goals</a><ul>
-<li><a href="#supporting-a-new-wave-of-ggplot2-extenders">Supporting ‘a new wave of ggplot2 extenders’</a></li>
-<li><a href="#supporting-newcomers-to-data-visualization-and-ggplot2">Supporting newcomers to data visualization and ggplot2</a></li>
-<li><a href="#supporting-statistical-learning">Supporting statistical learning</a></li>
-<li><a href="#supporting-new-r-package-developers">Supporting new R package developers</a></li>
-<li>
-<a href="#highlighting-new-opportuties-in-vizggplot2-extension">Highlighting new opportuties in viz/ggplot2 extension</a><ul>
-<li><a href="#rethinking-positional-aesthetics-beynod-x-and-y">Rethinking positional aesthetics (beynod x and y)</a></li>
-<li><a href="#new-points-of-entry-as-opposed-to-ggplot-minimal-data-transformation-andor-defaults">New points of entry as opposed to ggplot(), minimal data transformation and/or defaults</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#packages">Packages</a></li>
-<li><a href="#unblogs-experiments-and-code-demos">unblogs: experiments and code demos</a></li>
-<li><a href="#bio">Bio</a></li>
-</ul>
-<!-- README.md is generated from README.Rmd. Please edit that file --><div class="section level1">
-<div class="page-header"><h1 id="welcome-and-explanation">Welcome and explanation<a class="anchor" aria-label="anchor" href="#welcome-and-explanation"></a>
-</h1></div>
-<!-- badges: start --><!-- badges: end --><p>‘Do not scatter your energies’,</p>
-<p>These days I’m focused a lot on package building. I need a personal website update update. Instead of trying to reboot my blogdown website or convert to quarto, I’m just using package building architecture via pkgdown to create an updated personal webpage.</p>
-<!-- I may explore some meta package writing here as well.  -->
-</div>
+  <main id="main" class="col-md-9"><p><br><br></p>
 <div class="section level1">
-<h1 id="cv">CV<a class="anchor" aria-label="anchor" href="#cv"></a>
-</h1>
-<ul>
-<li><a href="https://evamaerey.github.io/cv/reynolds_evangeline_cv.pdf" class="external-link">cv</a></li>
-<li><a href="https://github.com/EvaMaeRey/cv/blob/main/reynolds_evangeline_cv.Rnw" class="external-link">link to update/suggest an edit</a></li>
-</ul>
+<div class="page-header"><h1 id="gina-reynolds">Gina Reynolds<a class="anchor" aria-label="anchor" href="#gina-reynolds"></a>
+</h1></div>
+<p>Welcome to my website!</p>
+<p>Below you’ll find links to talk materials, publications and working papers, software packages, project homepages, and my bio. You can find my CV <a href="https://evamaerey.github.io/io/reynolds_evangeline_cv.pdf" class="external-link"><strong>here</strong></a>. To suggest an edit or update, click <a href="https://github.com/EvaMaeRey/io/blob/main/docs/reynolds_evangeline_cv.rnw" class="external-link">here</a>.</p>
+<!-- badges: start --><!-- badges: end --><!-- 'Do not scatter your energies',  --><!-- These days I'm focused a lot on package building.  I need a personal website update update.  Instead of trying to reboot my blogdown website or convert to quarto, I'm just using package building architecture via pkgdown to create an updated personal webpage.   --><!-- I may explore some meta package writing here as well.  -->
 </div>
 <div class="section level1">
 <h1 id="recent-talks">Recent Talks<a class="anchor" aria-label="anchor" href="#recent-talks"></a>
 </h1>
+<!-- [![A mushroom-head robot](/assets/images/codey.jpg 'Codey the Codecademy mascot')](https://codecademy.com) --><!-- [![A mushroom-head robot](/docs/title-slide/Untitled.png 'Codey the Codecademy mascot')](https://codecademy.com) --><p><img src="reference/figures/title-slides/ggplot2_new_wave.png" width="33%"><img src="reference/figures/title-slides/tidypivot_maa.png" width="33%"><img src="reference/figures/title-slides/primer_wp.png" width="33%"><img src="reference/figures/title-slides/ggxmean_maa.png" width="33%"><img src="reference/figures/title-slides/network_du.png" width="33%"><img src="reference/figures/title-slides/stats_geoms_wp.png" width="33%"></p>
 <ul>
-<li><p><a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-outline.html#1" class="external-link">A New Wave of ggplot2 Extenders, at ASA COWY chapter</a></p></li>
+<li><p><a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" class="external-link">A New Wave of ggplot2 Extenders, 2023-10</a>, CO-WY Chapter, American Statistical Association</p></li>
 <li><p><a href="https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1" class="external-link">ggcirclepack and beyond: experiments in the compute_panel space, at ggplot2 extenders, Spring 2023</a></p></li>
 <li><p><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" class="external-link">Speaking ggplot2, April 2022, West Point Data Analytics Series</a></p></li>
-<li><p><a href="https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2" class="external-link">Creating new geom_*s for richer statistical storytelling, May 2022, West Point Department of Mathematics Talk Series</a></p></li>
+<li><p><a href="https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2" class="external-link">Creating new geom_*s for richer statistical storytelling, May 2022, West Point Department of Mathematics Speaker Series</a></p></li>
 <li><p><a href="https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&amp;t=408" class="external-link">Flipbooks, January 2020, RStudio Conference</a></p></li>
-<li><p><a href="">Elegant Statistical Narratives with ggxmean: MAA meeting, Poster Philidelphia, 2022</a></p></li>
-<li><p><a href="MAA%20Metro%20New%20York%20May%202022">tidypivot</a></p></li>
+<li><p><a href="https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png" class="external-link">Elegant Statistical Narratives with ggxmean: MAA meeting, Poster Philidelphia, August, 2022</a></p></li>
+<li><p><a href="https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1" class="external-link">tidypivot, MAA Metro New York May 2022</a></p></li>
 <li><p><a href="https://evamaerey.github.io/ggxmean/talk_maa_metro_ny.html#1" class="external-link">Extending ggplot2 statistical geometries, MAA Metro New York May 2021</a></p></li>
 <li><p><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" class="external-link">Intro to Network Analysis and Visualization</a></p></li>
 <li><p><a href="">Shallow Fakes: Assessing the potential for spoofing and faking in data visualization and what to do about it, University of Denver May 2019</a></p></li>
@@ -177,7 +177,8 @@
 <div class="section level1">
 <h1 id="packages">Packages<a class="anchor" aria-label="anchor" href="#packages"></a>
 </h1>
-<p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
+<p><a href="https://github.com/EvaMaeRey/codeexplode" class="external-link">codeexplode</a>, <a href="https://github.com/EvaMaeRey/codehover" class="external-link">codehover</a>, <a href="https://github.com/EvaMaeRey/doublecrochet" class="external-link">doublecrochet</a>, <a href="https://github.com/EvaMaeRey/exampleexploder" class="external-link">exampleexploder</a>, <a href="https://github.com/EvaMaeRey/formatR" class="external-link">formatR</a>, <a href="https://github.com/EvaMaeRey/ggbarlabs" class="external-link">ggbarlabs</a>, <a href="https://github.com/EvaMaeRey/ggbody" class="external-link">ggbody</a>, <a href="https://github.com/EvaMaeRey/ggbrasil" class="external-link">ggbrasil</a>, <a href="https://github.com/EvaMaeRey/ggcalendar" class="external-link">ggcalendar</a>, <a href="https://github.com/EvaMaeRey/ggchile" class="external-link">ggchile</a>, <a href="https://github.com/EvaMaeRey/ggcirclepack" class="external-link">ggcirclepack</a>, <a href="https://github.com/EvaMaeRey/ggdirect" class="external-link">ggdirect</a>, <a href="https://github.com/EvaMaeRey/ggdistrics" class="external-link">ggdistrics</a>, <a href="https://github.com/EvaMaeRey/ggdistricts" class="external-link">ggdistricts</a>, <a href="https://github.com/EvaMaeRey/ggextend" class="external-link">ggextend</a>, <a href="https://github.com/EvaMaeRey/ggfips" class="external-link">ggfips</a>, <a href="https://github.com/EvaMaeRey/ggjudge" class="external-link">ggjudge</a>, <a href="https://github.com/EvaMaeRey/ggmemory" class="external-link">ggmemory</a>, <a href="https://github.com/EvaMaeRey/ggnc" class="external-link">ggnc</a>, <a href="https://github.com/EvaMaeRey/ggnorthcarolina" class="external-link">ggnorthcarolina</a>, <a href="https://github.com/EvaMaeRey/ggols" class="external-link">ggols</a>, <a href="https://github.com/EvaMaeRey/ggpivot" class="external-link">ggpivot</a>, <a href="https://github.com/EvaMaeRey/ggsample" class="external-link">ggsample</a>, <a href="https://github.com/EvaMaeRey/ggsmoothfit" class="external-link">ggsmoothfit</a>, <a href="https://github.com/EvaMaeRey/ggstamp" class="external-link">ggstamp</a>, <a href="https://github.com/EvaMaeRey/ggstates" class="external-link">ggstates</a>, <a href="https://github.com/EvaMaeRey/ggverbatim" class="external-link">ggverbatim</a>, <a href="https://github.com/EvaMaeRey/ggxmean" class="external-link">ggxmean</a>, <a href="https://github.com/EvaMaeRey/io" class="external-link">io</a>, <a href="https://github.com/EvaMaeRey/ma206data" class="external-link">ma206data</a>, <a href="https://github.com/EvaMaeRey/ma206distributions" class="external-link">ma206distributions</a>, <a href="https://github.com/EvaMaeRey/ma206equations" class="external-link">ma206equations</a>, <a href="https://github.com/EvaMaeRey/poeml" class="external-link">poeml</a>, <a href="https://github.com/EvaMaeRey/readme2pkg" class="external-link">readme2pkg</a>, <a href="https://github.com/EvaMaeRey/tabylextra" class="external-link">tabylextra</a>, <a href="https://github.com/EvaMaeRey/tidybernoulli" class="external-link">tidybernoulli</a>, <a href="https://github.com/EvaMaeRey/tidypivot" class="external-link">tidypivot</a>,</p>
 </div>
 <div class="section level1">
 <h1 id="unblogs-experiments-and-code-demos">unblogs: experiments and code demos<a class="anchor" aria-label="anchor" href="#unblogs-experiments-and-code-demos"></a>
@@ -192,10 +193,10 @@
 <div class="section level1">
 <h1 id="bio">Bio<a class="anchor" aria-label="anchor" href="#bio"></a>
 </h1>
-<p>Hello and welcome! I’m a data scientist and educator that’s especially passionate about using visualization to facilitate communication and statistical learning. I’m particularly motivated by the elegance and power of the “Grammar of Graphics” framework, and am exploring how to further empower ggplot2 users to take advantage of the extension space by 1) working on new extension packages for statistical education and 2) providing new points of entry into the ggplot2 world (tutorials/recipes as well as community building).</p>
-<p>For the last three years, I’ve worked in the Dean’s Data Cell at the United States Military Academy at West Point in a data analytics and teaching dual role. I worked closely with stakeholders and other members of the data team to deliver actionable insights and meet institutional reporting requirments. I worked on the Deans Data Cell infrastructure towards, code-first, reproducible and elegant data products. I also taught sections of MA206 Introduction to Statistics and Probability in the Mathematics Department, and oversaw five independent studies focused on tool-building for statistical education (2X Fall AY2022, 1X Spring AY2022, 2X Spring AY2023).</p>
-<p>From Fall AY2018-Spring AY2020, I taught statistical methodology at the University of Denver’s Josef Korbel School of International Studies Visiting Teaching Assistant Professor, and previously lectured at the Technische Universität Dresden’s Center for International Studies (Spring AY2016 and Spring AY2018). My PhD is from the University of Illinois, where my dissertation won Burkholder Award for Best Dissertation in the Political Science Department of the University of Illinois.</p>
-<p>I focus was on international institutions and law especially in the area of security. More broadly, my areas of study have been International Relations, Methodology, and Comparative Politics with an emphasis on Latin American Politics. My dissertation focused on compliance with supranational law, focusing on the UN Security Council resolutions as my principle case; I conducted dissertation field research in Brazil in the Federal House of Deputies.</p>
+<p>Hello and welcome! I’m a data scientist, software developer, and educator who is passionate about using visualization to facilitate communication about data and in statistical principles. I’m particularly motivated by the elegance and power of the “Grammar of Graphics” framework, and am exploring how to further empower ggplot2 users to take advantage of the extension space by 1) working on new extension packages for statistical education and 2) providing new points of entry into the ggplot2 world (tutorials/recipes as well as community building).</p>
+<p>For the last three years, I’ve worked in the Dean’s Data Cell at the United States Military Academy at West Point in a data analytics and teaching dual role. I worked closely with stakeholders and other members of the data team to deliver actionable insights and meet institutional reporting requirements. I worked on the Deans Data Cell infrastructure towards code-first, reproducible and elegant data products that could be easily interpreted by a wide audience. I also taught sections of Introduction to Statistics and Probability (MA206) in the Mathematics Department, and oversaw five independent studies focused on tool-building for statistical education (Brown and McGovern in Fall AY2022, Brown in Spring AY2022, and Folorunso and Jax Spring AY2023).</p>
+<p>From Fall AY2018-Spring AY2020, I taught statistical methodology at the University of Denver’s Korbel School of International Studies. During this period, I won an R Consortium, which allowed me to work with six graduate student researchers to advance that project (Granier, Goodman, Picci, Thapa, Surrency, Woodrum). I had previously lectured at the Technische Universität Dresden’s Center for International Studies on international organizations and statistical methodology (Spring AY2016 and Spring AY2018).</p>
+<p>My PhD is from the University of Illinois, where my dissertation won Burkholder Award for Best Dissertation in the Political Science Department of the University of Illinois. I focus was on international institutions and law especially in the area of security. More broadly, my areas of study have been International Relations, Methodology, and Comparative Politics with an emphasis on Latin American Politics. My dissertation focused on compliance with supranational law, focusing on the UN Security Council resolutions as my principle case; I conducted dissertation field research in Brazil in the Federal House of Deputies.</p>
 <p>During my PhD, I worked as a statistics consultant, at the Applied Technologies of the Arts and Science (ATLAS), at the University of Illinois from 2013-2015. I also served “Methods TA” in Political Science in the 2015-2016 academic year at the University of Illinois, providing assistance and expertise both to undergraduate and graduate students. At TU Dresden, in 2018, I designed and taught a course introducing students to data science tools and statistical analysis for political research.</p>
 <p>I have been awarded the Fulbright Fellowship (Argentina 2008), Foreign Language and Area Studies Fellowships (2009-2011), Nelle Signor Travel Fellowship (Brazil 2011) and have participated in specialized workshops including the Empirical Implications of Theoretical Models (2010), Public Policy and Nuclear Threats (2013), the Berkeley Institute for Transparency in the Social Sciences (2015) workshops, the Zurich Summer School for Women in Political Methodology (2017), and the Lorentz Workshop: Empirical Research on International Organizations (2018).</p>
 <p>Previously to my academic career, I worked at the U.S. Department of Commerce’s Bureau of Industry and Security in chemical and biological export controls and have worked in lithium-ion battery failure diagnostics at the Chemical Engineering Division of Argonne National Laboratory.</p>
@@ -237,14 +238,15 @@
 </div>
 
 
-    <footer><div class="pkgdown-footer-left">
+    <footer><div class="copyright">
   <p></p>
 <p>Developed by First Last.</p>
 </div>
 
-<div class="pkgdown-footer-right">
+<div class="pkgdown">
   <p></p>
 <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
     </footer>

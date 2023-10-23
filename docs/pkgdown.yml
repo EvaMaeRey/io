@@ -3,8 +3,5 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   more: more.html
-last_built: 2023-10-06T04:00Z
-urls:
-  reference: evamaerey.github.io/io/reference
-  article: evamaerey.github.io/io/articles
+last_built: 2023-10-20T21:25Z
 
