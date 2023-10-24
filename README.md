@@ -29,63 +29,17 @@ To suggest an edit or update, click
 
 <!-- [![A mushroom-head robot](/docs/title-slide/Untitled.png 'Codey the Codecademy mascot')](https://codecademy.com) -->
 
-``` r
-my_talks <- tibble::tribble(
-  ~short_ref, ~date, ~location, ~title, ~url, ~org,
-  "ggplot2_new_wave", "October 2023", "Denver", "A New Wave of ggplot2 Extenders", "https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1", "CO-WY Chapter, American Statistical Association",
-  "ggcirclepack_beyond", "March 2023", "Virtual meeting", "ggcirclepack and beyond: experiments in the compute_panel space, at ggplot2 extenders", "https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1", "ggplot2 extenders meetup",
-  "primer_wp", "April 2022", "New York", "Speaking ggplot2", "https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1", "West Point Data Analytics Series",
-  "stats_geoms_wp", "May 2022", "New York", "Creating new geom_*s for richer statistical storytelling", "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2", "West Point Department of Mathematics Speaker Series",
-  "flipbooks", "January 2020", "San Francisco", "Flipbooks", "https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408", "RStudio Conference",
-  "ggxmean_maa", "August 2022", "Philadelphia", "Elegant Statistical Narratives with ggxmean: MAA meeting, Poster", "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png", "Mathematical Association of America",
-  "tidypivot_maa", "May 2022", "New York", "tidypivot: declarative table builds", "https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1", "Mathematical Association of America - Metro New York",
-  "network_du", "April 2020", "Denver", "Intro to Network Analysis and Visualization", "https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1", "Korbel School of International Studies, University of Denver",
-  "shallow_fakes", "May 2019", "Denver", "Shallow Fakes: Assessing the potential for spoofing and faking in data visualization and what to do about it", "URL", "Korbel School of International Studies, University of Denver"
-)
-```
+    #> [1] "https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1"                     
+    #> [2] "https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1"
+    #> [3] "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2"
+    #> [4] "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png"                      
+    #> [5] "https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1"                               
+    #> [6] "https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1"  
+    #> [7] "https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1"                                   
+    #> [8] "https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408"                                                   
+    #> [9] "URL"
 
-``` r
-make_png_path <- function(info_frame, which){ paste0("man/title-slides/", info_frame$short_ref[which], ".png")}
-
-save_webshot_to_man <- function(info_frame, which){
-  
-  webshot2::webshot(url = info_frame$url[which], 
-                  file = make_png_path(info_frame, which))
-
-}
-
-write_html_hyper_image <- function(info_frame, which){
-  
-  
-  path_png <- make_png_path(info_frame, which)
-  
-  if(!exists(path_png)){
-    
-    save_webshot_to_man(info_frame, which)
-    
-  }else{
-    
-    return(
-      paste0(
-      '<a href="',url,'" width = "33%">
-<img src="', png_path, '"/>
-</a>'
-
-)
-      
-    )
-    
-  }
-  
-}
-```
-
-``` r
-dir.create("man/title-slides")
-write_html_hyper_image(my_talks, which = 1)
-```
-
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" width = "33%"><img src="man/title-slides/ggplot2_new_wave.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" width = "33%"><img src="man/title-slides/primer_wp.png"/></a><a href="https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png" width = "33%"><img src="man/title-slides/ggxmean_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1" width = "33%"><img src="man/title-slides/tidypivot_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" width = "33%"><img src="man/title-slides/network_du.png"/></a>
 
 # Projects and Goals
 
