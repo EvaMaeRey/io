@@ -29,17 +29,7 @@ To suggest an edit or update, click
 
 <!-- [![A mushroom-head robot](/docs/title-slide/Untitled.png 'Codey the Codecademy mascot')](https://codecademy.com) -->
 
-    #> [1] "https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1"                     
-    #> [2] "https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1"
-    #> [3] "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2"
-    #> [4] "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png"                      
-    #> [5] "https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1"                               
-    #> [6] "https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1"  
-    #> [7] "https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1"                                   
-    #> [8] "https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408"                                                   
-    #> [9] "URL"
-
-<a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" width = "33%"><img src="man/title-slides/ggplot2_new_wave.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" width = "33%"><img src="man/title-slides/primer_wp.png"/></a><a href="https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png" width = "33%"><img src="man/title-slides/ggxmean_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1" width = "33%"><img src="man/title-slides/tidypivot_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" width = "33%"><img src="man/title-slides/network_du.png"/></a>
+<a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" width = "33%"><img src="man/title-slides/ggplot2_new_wave.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" width = "33%"><img src="man/title-slides/primer_wp.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#1" width = "33%"><img src="man/title-slides/stats_geoms_wp.png"/></a><a href="https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1" width = "33%"><img src="man/title-slides/tidypivot_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" width = "33%"><img src="man/title-slides/network_du.png"/></a>
 
 # Projects and Goals
 
@@ -69,6 +59,8 @@ group and will introduce some such new points of entry.
 
 <!-- Finally, know-how in the extension space should lead to greater knowledge of the ggplot2 code base and could help build the ggplot2 contributor-maintainer pool of talent. -->
 
+<a href="https://evamaerey.github.io/mytidytuesday/2022-01-03-easy-geom-recipes/easy_geom_recipes_flipbook.html#1" width = "33%"><img src="man/title-slides/easy_geom_recipes_flipbook.png"/></a>
+
   - easy geom recipes: diving into defining compute\_group ggprotos
 
   - more geom recipes: cases when compute\_group is not enough
@@ -78,6 +70,11 @@ group and will introduce some such new points of entry.
 
   - Coordinating ggplot2 extenders meetup/support group
 
+function (x, file = “data”, ncolumns = if (is.character(x)) 1 else 5,
+append = FALSE, sep = " “) cat(x, file = file, sep = c(rep.int(sep,
+ncolumns - 1),”"), append = append) \<bytecode: 0x7ff60747b890\>
+\<environment: namespace:base\>
+
 ## Supporting newcomers to data visualization and ggplot2
 
   - ggplot2 flipbook
@@ -85,17 +82,26 @@ group and will introduce some such new points of entry.
 
 ## Supporting statistical learning
 
+<a href="https://evamaerey.github.io/ma206distributions" width = "33%"><img src="man/title-slides/ma206distributions.png"/></a>
+
   - packages focus on intro stats
 
   - ma206data with maintained with statistics faculty West Point’s Math
 
 ## Supporting new R package developers
 
+## Supporting statistical learning
+
   - ggtedius workshop
+
   - readme2pkg and readme as package story, tocs and enumeration of
     steps SeeEvaMaeRey/ggsmoothfit
+
   - [A companion guide to Jim Hester’s, ‘You can make an R package in 20
     minutes’](https://evamaerey.github.io/package_in_20_minutes/package_in_20_minutes)
+
+  - [immersive companion
+    guide](https://evamaerey.github.io/package_in_20_minutes/package_in_20_minutes)
 
 \`Books are meant to be read, … packages are not meant to be read and so
 I think it is kind’ - ‘R Packages: Q & A with Jenny Bryan’ around 3:00
@@ -117,8 +123,6 @@ I think it is kind’ - ‘R Packages: Q & A with Jenny Bryan’ around 3:00
 positional aesthetics
 
 # Packages
-
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 [codeexplode](https://github.com/EvaMaeRey/codeexplode),
 [codehover](https://github.com/EvaMaeRey/codehover),
@@ -143,6 +147,7 @@ positional aesthetics
 [ggols](https://github.com/EvaMaeRey/ggols),
 [ggpivot](https://github.com/EvaMaeRey/ggpivot),
 [ggsample](https://github.com/EvaMaeRey/ggsample),
+[ggslice](https://github.com/EvaMaeRey/ggslice),
 [ggsmoothfit](https://github.com/EvaMaeRey/ggsmoothfit),
 [ggstamp](https://github.com/EvaMaeRey/ggstamp),
 [ggstates](https://github.com/EvaMaeRey/ggstates),

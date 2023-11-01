@@ -55,52 +55,38 @@ my_talks <- tibble::tribble(
   ~short_ref, ~date, ~location, ~title, ~url, ~org,
   "ggplot2_new_wave", "October 2023", "Denver", "A New Wave of ggplot2 Extenders", "https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1", "CO-WY Chapter, American Statistical Association",
   "primer_wp", "April 2022", "New York", "Speaking ggplot2", "https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1", "West Point Data Analytics Series",
-  "stats_geoms_wp", "May 2022", "New York", "Creating new geom_*s for richer statistical storytelling", "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#2", "West Point Department of Mathematics Speaker Series",
-  "ggxmean_maa", "August 2022", "Philadelphia", "Elegant Statistical Narratives with ggxmean: MAA meeting, Poster", "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png", "Mathematical Association of America",
-  "tidypivot_maa", "May 2022", "New York", "tidypivot: declarative table builds", "https://evamaerey.github.io/mytidytuesday/maa_may_2022_presentation.html#1", "Mathematical Association of America - Metro New York",
+  "stats_geoms_wp", "May 2022", "New York", "Creating new geom_*s for richer statistical storytelling", "https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#1", "West Point Department of Mathematics Speaker Series",
+  "tidypivot_maa", "May 2022", "New York", "tidypivot: declarative table builds", "https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1", "Mathematical Association of America - Metro New York",
   "network_du", "April 2020", "Denver", "Intro to Network Analysis and Visualization", "https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1", "Korbel School of International Studies, University of Denver",
   "circlepack", "March 2023", "Virtual meeting", "ggcirclepack and beyond: experiments in the compute_panel space, at ggplot2 extenders", "https://evamaerey.github.io/ggcirclepack/circle_pack_and_beyond_talk#1", "ggplot2 extenders meetup",
+  "ggxmean_maa", "August 2022", "Philadelphia", "Elegant Statistical Narratives with ggxmean: MAA meeting, Poster", "https://github.com/EvaMaeRey/ggxmean/blob/master/docs/philly_poster_screen_shot.png", "Mathematical Association of America",
   "flipbooks", "January 2020", "San Francisco", "Flipbooks", "https://youtu.be/9Sgg1lJRM8c?si=Q28CtH59Df8DRmbI&t=408", "RStudio Conference",
   "shallow_fakes", "May 2019", "Denver", "Shallow Fakes: Assessing the potential for spoofing and faking in data visualization and what to do about it", "URL", "Korbel School of International Studies, University of Denver"
 )
-my_talks |> dplyr::pull(url) 
 ```
 
 
 ```{r, eval = F, echo = F}
-webshot2::webshot("https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1", "docs/title-slides/tidypivot_maa.png")
+webshot2::webshot("https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1", "man/title-slides/tidypivot_maa.png")
 
-webshot2::webshot(url = my_talks$url[1], 
-                  file = 
-                    paste0("man/title-slides/", my_talks$short_ref[1], ".png"))
 ```
 
 ```{r}
-make_png_path <- function(info_frame, which){ 
-  paste0("man/title-slides/", info_frame$short_ref[which], ".png")
+make_png_path <- function(short_ref){ 
+  paste0("man/title-slides/", short_ref, ".png")
   }
 
-save_webshot_to_man <- function(info_frame, which){
-  
-  webshot2::webshot(url = info_frame$url[which], 
-                  file = make_png_path(info_frame, which))
 
-}
-
-write_html_hyper_image <- function(info_frame, which){
+write_html_hyper_image <- function(url = NULL, png_path = NULL, short_ref){
   
-  url <- info_frame$url[which]
-  path_png <- make_png_path(info_frame, which)
+  if(is.null(png_path)){png_path = make_png_path(short_ref)}
   
-  if(!file.exists(path_png)){
-    
-    save_webshot_to_man(info_frame, which)
-    
-  }
+  
+  if(!file.exists(png_path)){webshot2::webshot(url, png_path)}
 
   try(
     paste0(
-      '<a href="', url,'" width = "33%"><img src="', path_png, '"/></a>'
+      '<a href="', url,'" width = "33%"><img src="', png_path, '"/></a>'
       ) |> cat()
   )
       
@@ -108,31 +94,21 @@ write_html_hyper_image <- function(info_frame, which){
   }
   
 
+
+
 ```
 
 
 ```{r, results = 'asis'}
 # dir.create("man/title-slides")
-write_html_hyper_image(my_talks, which = 1) 
-write_html_hyper_image(my_talks, which = 2) 
-# write_html_hyper_image(my_talks, which = 3)
-write_html_hyper_image(my_talks, which = 4)
-write_html_hyper_image(my_talks, which = 5)
-write_html_hyper_image(my_talks, which = 6)
+write_html_hyper_image(my_talks$url[1], short_ref = my_talks$short_ref[1]) 
+write_html_hyper_image(my_talks$url[2], short_ref = my_talks$short_ref[2]) 
+write_html_hyper_image(my_talks$url[3], short_ref = my_talks$short_ref[3]) 
+write_html_hyper_image(my_talks$url[4], short_ref = my_talks$short_ref[4]) 
+write_html_hyper_image(my_talks$url[5], short_ref = my_talks$short_ref[5]) 
 ```
 
-```{r, out.width="33%", fig.show='hold', echo = F, eval = F}
 
-
-
-knitr::include_graphics("man/figures/title-slides/ggplot2_new_wave.png")
-knitr::include_graphics("man/figures/title-slides/primer_wp.png")
-knitr::include_graphics("man/figures/title-slides/ggxmean_maa.png")
-knitr::include_graphics("man/figures/title-slides/network_du.png")
-knitr::include_graphics("man/figures/title-slides/stats_geoms_wp.png")
-knitr::include_graphics("man/figures/title-slides/tidypivot_maa.png")
-
-```
 
 
 
@@ -157,6 +133,15 @@ The assertion of this project is that many ggplot2 super-users could find creati
 
 <!-- Finally, know-how in the extension space should lead to greater knowledge of the ggplot2 code base and could help build the ggplot2 contributor-maintainer pool of talent. -->
 
+```{r, results = 'asis'}
+# dir.create("man/title-slides")
+write_html_hyper_image("https://evamaerey.github.io/mytidytuesday/2022-01-03-easy-geom-recipes/easy_geom_recipes_flipbook.html#1", short_ref = "easy_geom_recipes_flipbook") 
+
+
+
+```
+
+
 - easy geom recipes: diving into defining compute_group ggprotos
 
 - more geom recipes: cases when compute_group is not enough (compute_panel)
@@ -165,8 +150,8 @@ The assertion of this project is that many ggplot2 super-users could find creati
 
 - Coordinating ggplot2 extenders meetup/support group
 
-```{r, eval = F, out.width="33%", echo = F}
-knitr::include_graphics("docs/title-slides/circlepack.png")
+```{r,  results = "asis"}
+write
 ```
 
 ## Supporting newcomers to data visualization and ggplot2
@@ -176,16 +161,32 @@ knitr::include_graphics("docs/title-slides/circlepack.png")
 
 ## Supporting statistical learning
 
+```{r, results = 'asis'}
+# dir.create("man/title-slides")
+write_html_hyper_image("https://evamaerey.github.io/ma206distributions", short_ref = "ma206distributions") 
+```
+
 - packages focus on intro stats
 
 - ma206data with maintained with statistics faculty West Point's Math 
 
 ## Supporting new R package developers
 
+
+## Supporting statistical learning
+
+
 - ggtedius workshop
 - readme2pkg and readme as package story, tocs and enumeration of steps  SeeEvaMaeRey/ggsmoothfit
 - [A companion guide to Jim Hester's, 'You can make an R package in 20 minutes'](https://evamaerey.github.io/package_in_20_minutes/package_in_20_minutes)
 
+- [immersive companion guide](https://evamaerey.github.io/package_in_20_minutes/package_in_20_minutes)
+
+
+```{r, results = 'asis'}
+# dir.create("man/title-slides")
+#write_html_hyper_image("https://evamaerey.github.io/ggtedious", short_ref = "ggtedious") 
+```
 
 `Books are meant to be read, ... packages are not meant to be read and so I think it is kind' - 'R Packages: Q & A with Jenny Bryan' around 3:00
 
@@ -211,7 +212,7 @@ positional aesthetics
 
 
 
-```{r, echo = F, fig.height=1.5, fig.width=8}
+```{r, echo = F, fig.height=1.5, fig.width=8, eval = F}
 library(ggstamp)
 packages <- c("ggxmean", "ggstamp", "ggverbatim", "ggcirclepack", "ma206\ndistributions", "ma206\nequations", "ggchalkboard", "ggstates", "tidypivot", "ggsmoothfit", "ggsmoothfit", "doublecrochet", "ggdirect", "ggnc", "ggnorthcarolina" )
 
@@ -264,3 +265,6 @@ I have been awarded the Fulbright Fellowship (Argentina 2008), Foreign Language 
 
 Previously to my academic career, I worked at the U.S. Department of Commerce’s Bureau of Industry and Security in chemical and biological export controls and have worked in lithium-ion battery failure diagnostics at the Chemical Engineering Division of Argonne National Laboratory.
 
+```{r, eval = F}
+pkgdown::build_site()
+```
