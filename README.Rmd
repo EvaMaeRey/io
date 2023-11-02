@@ -73,14 +73,13 @@ webshot2::webshot("https://evamaerey.github.io/tidypivot/maa_may_2022_presentati
 
 ```{r}
 make_png_path <- function(short_ref){ 
-  paste0("man/title-slides/", short_ref, ".png")
+  paste0("man/figures/", short_ref, ".png")
   }
 
 
 write_html_hyper_image <- function(url = NULL, png_path = NULL, short_ref){
   
   if(is.null(png_path)){png_path = make_png_path(short_ref)}
-  
   
   if(!file.exists(png_path)){webshot2::webshot(url, png_path)}
 

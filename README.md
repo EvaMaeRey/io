@@ -29,7 +29,7 @@ To suggest an edit or update, click
 
 <!-- [![A mushroom-head robot](/docs/title-slide/Untitled.png 'Codey the Codecademy mascot')](https://codecademy.com) -->
 
-<a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" width = "33%"><img src="man/title-slides/ggplot2_new_wave.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" width = "33%"><img src="man/title-slides/primer_wp.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#1" width = "33%"><img src="man/title-slides/stats_geoms_wp.png"/></a><a href="https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1" width = "33%"><img src="man/title-slides/tidypivot_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" width = "33%"><img src="man/title-slides/network_du.png"/></a>
+<a href="https://evamaerey.github.io/mytidytuesday/2023-09-26-cowy-outline/cowy-slides.html#1" width = "33%"><img src="man/figures/ggplot2_new_wave.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-04-21-ggplot2-grammar-primer/ggplot2_grammar_primer.html#1" width = "33%"><img src="man/figures/primer_wp.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-09-statistical-geometries/statistical_geometries.html#1" width = "33%"><img src="man/figures/stats_geoms_wp.png"/></a><a href="https://evamaerey.github.io/tidypivot/maa_may_2022_presentation.html#1" width = "33%"><img src="man/figures/tidypivot_maa.png"/></a><a href="https://evamaerey.github.io/mytidytuesday/2022-05-23-networks-presentation/networks_presentation.html#1" width = "33%"><img src="man/figures/network_du.png"/></a>
 
 # Projects and Goals
 
@@ -59,7 +59,7 @@ group and will introduce some such new points of entry.
 
 <!-- Finally, know-how in the extension space should lead to greater knowledge of the ggplot2 code base and could help build the ggplot2 contributor-maintainer pool of talent. -->
 
-<a href="https://evamaerey.github.io/mytidytuesday/2022-01-03-easy-geom-recipes/easy_geom_recipes_flipbook.html#1" width = "33%"><img src="man/title-slides/easy_geom_recipes_flipbook.png"/></a>
+<a href="https://evamaerey.github.io/mytidytuesday/2022-01-03-easy-geom-recipes/easy_geom_recipes_flipbook.html#1" width = "33%"><img src="man/figures/easy_geom_recipes_flipbook.png"/></a>
 
   - easy geom recipes: diving into defining compute\_group ggprotos
 
@@ -72,7 +72,7 @@ group and will introduce some such new points of entry.
 
 function (x, file = “data”, ncolumns = if (is.character(x)) 1 else 5,
 append = FALSE, sep = " “) cat(x, file = file, sep = c(rep.int(sep,
-ncolumns - 1),”"), append = append) \<bytecode: 0x7ff60747b890\>
+ncolumns - 1),”"), append = append) \<bytecode: 0x7fc6bc707a90\>
 \<environment: namespace:base\>
 
 ## Supporting newcomers to data visualization and ggplot2
@@ -82,7 +82,7 @@ ncolumns - 1),”"), append = append) \<bytecode: 0x7ff60747b890\>
 
 ## Supporting statistical learning
 
-<a href="https://evamaerey.github.io/ma206distributions" width = "33%"><img src="man/title-slides/ma206distributions.png"/></a>
+<a href="https://evamaerey.github.io/ma206distributions" width = "33%"><img src="man/figures/ma206distributions.png"/></a>
 
   - packages focus on intro stats
 
@@ -157,6 +157,7 @@ positional aesthetics
 [ma206data](https://github.com/EvaMaeRey/ma206data),
 [ma206distributions](https://github.com/EvaMaeRey/ma206distributions),
 [ma206equations](https://github.com/EvaMaeRey/ma206equations),
+[note](https://github.com/EvaMaeRey/note),
 [poeml](https://github.com/EvaMaeRey/poeml),
 [readme2pkg](https://github.com/EvaMaeRey/readme2pkg),
 [tabylextra](https://github.com/EvaMaeRey/tabylextra),
